@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+	
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+	<style>
+		
+		body 
+		
+		{
+		text-align: center;	  
+		overflow: scroll;
+		background-color: lightyellow;
+		}
+			
+	</style>
+	
+</head>
+
+	
+	
+<body>
+	
+	<h1> The Ultra Canvas</h1>
+	<h2>  Canvas with a ball in the center of it</h2>
+	
+<canvas id="UCanvas" width="400" height="400" style="border:8px solid #202651;">
+
+	Your browser does not support the HTML canvas tag.
+	
+</canvas>
+	
+<script>
+	
+var c = document.getElementById ("UCanvas");
+
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(200, 200, 60, 0, 2 * Math.PI);
+ctx.stroke();
+
+	
+</script>	
+	
+	
+	
+</body>
+	
+</html>
